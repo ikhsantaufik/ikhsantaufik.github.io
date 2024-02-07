@@ -1,0 +1,122 @@
+nav {
+  display: flex;
+  background-color: gainsboro;
+  padding: 0 80px;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .left {
+  justify-content: space-between;
+  width: 30px;
+}
+
+nav .menu {
+  margin-right: 60%;
+  display: flex;
+  font-weight: bolder;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+nav .menu ul li {
+  list-style: none;
+}
+
+nav .menu ul li a {
+  text-decoration: none;
+}
+
+nav .right a {
+  justify-content: space-between;
+}
+
+nav .right a {
+  background-color: rgb(0, 0, 0);
+  border-radius: 10px;
+  padding: 10px 25px;
+  color: white;
+  text-decoration: none;
+}
+body .content {
+  display: flex;
+  box-shadow: 0px 0px 40px gray;
+  margin: 50px;
+  justify-content: space-between;
+}
+
+body div .isi-content {
+  margin: 50px 0px 50px 50px;
+  text-align: justify;
+}
+
+div .contact-bawah {
+  margin: 0px 15px 0px 0px;
+  border-radius: 40px;
+  background-color: black;
+  padding: 10px 20px;
+}
+
+div .contact-bawah a {
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+body div a .idown {
+  width: 25px;
+  height: 20px;
+}
+
+body .icon {
+  display: flex;
+  margin: 50px 0px 0px 0px;
+  gap: 20px;
+}
+
+body div .foto {
+  margin: 60px;
+  text-align: center;
+  box-shadow: 0px 0px 40px gray;
+  float: right;
+}
+
+/* form*/
+form {
+  width: 350px;
+  margin: 50px auto;
+}
+
+form div h3 a {
+  margin: 65px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdbdb;
+}
+
+textarea {
+  resize: none;
+  height: 100px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form div {
+  margin-top: 15px;
+}
+
+form div button {
+  margin-top: 10px;
+  float: right;
+  background-color: black;
+  padding: 5px 20px;
+  border: none;
+  border-radius: 40px 40px;
+  color: white;
+  font-weight: bold;
+}

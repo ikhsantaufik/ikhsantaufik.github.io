@@ -1,0 +1,68 @@
+<html>
+  <head>
+    <title>Portofolio</title>
+    <link href="./asset/css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div class="left">
+        <img src="./asset/image/logoi.png" alt="logoi" />
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+        </ul>
+        <ul>
+          <li><a href="./index.html">My Project</a></li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="./contact-me.html">Contact</a>
+      </div>
+    </nav>
+    <!-- Form contact me -->
+    <form>
+      <div class="judul">
+        <h3>
+          <a> MASUKAN DATA ANDA </a>
+        </h3>
+      </div>
+      <div class="nama">
+        <label>Nama</label>
+        <input type="text" id="nama" />
+      </div>
+
+      <div class="email">
+        <label>Email</label>
+        <input type="email" id="email" />
+      </div>
+
+      <div class="phone">
+        <label>Phone Number</label>
+        <input type="text" id="phone" />
+      </div>
+
+      <div>
+        <label>Subject</label>
+        <select id="subject">
+          <option hidden></option>
+          <option>Frontend Developer</option>
+          <option>Backend Developer</option>
+          <option>Fullstack Developer</option>
+        </select>
+      </div>
+
+      <div class="massage">
+        <label>Your Message</label>
+        <textarea id="massage"></textarea>
+      </div>
+
+      <div>
+        <button type="button" onclick="getData()">Submit</button>
+      </div>
+    </form>
+  </body>
+
+  <script src="./asset/js/scirpt.js"></script>
+</html>
