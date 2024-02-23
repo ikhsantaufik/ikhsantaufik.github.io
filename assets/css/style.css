@@ -1,0 +1,168 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #e3e7eb;
+  width: auto;
+}
+
+@media screen and (max-width: 800px) {
+  .right a {
+    display: none;
+  }
+  .hamberger {
+    display: block;
+  }
+  .card {
+    display: none;
+  }
+}
+
+/* Navbar */
+nav {
+  width: auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f3f3;
+  padding: 15px 80px;
+  align-items: center;
+}
+
+nav .left ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+nav .left ul img {
+  margin-right: 40px;
+}
+
+nav .left ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav .left ul .active a {
+  font-weight: bold;
+}
+
+nav .left ul li {
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.right a {
+  text-decoration: none;
+  background-color: #111727;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.hamberger {
+  display: block;
+}
+
+/* Card */
+.card {
+  display: flex;
+  margin: auto auto;
+  background-color: #fff;
+  width: auto;
+  height: 230vh;
+  border-radius: 7px;
+}
+
+/* Content Card */
+.content {
+  width: 50%;
+}
+
+.content_card {
+  box-sizing: border-box;
+  padding-left: 50px;
+  margin: 90px auto;
+  width: 100%;
+  height: 70%;
+}
+
+.content_msg {
+  width: auto;
+  text-align: justify;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.content_btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.content_btn button {
+  background-color: #111727;
+  color: #fff;
+  text-align: center;
+  border: none;
+  border-radius: 50px;
+  padding: 5px 25px;
+  font-family: Poppins;
+  font-size: large;
+  cursor: pointer;
+}
+
+.content_btn a {
+  color: inherit;
+}
+
+.content_btn a i {
+  font-size: 20px;
+}
+
+.content_socialmedia {
+  display: flex;
+  gap: 30px;
+  margin-top: 35px;
+}
+
+.content_socialmedia a img {
+  width: 35px;
+}
+
+/* Profile Card */
+.profile {
+  width: 50%;
+}
+
+.profile_card {
+  margin: 100px auto;
+  width: 50%;
+  height: auto;
+  border-radius: 7px;
+  box-shadow: 2px 2px 10px 2px lightgrey;
+}
+
+.profile_card img {
+  width: 100%;
+  height: 80%;
+  border-radius: 7px 7px 0 0;
+  object-fit: cover;
+}
+
+.profile_card p {
+  text-align: center;
+  font-size: small;
+  margin-top: -5px;
+}
+
+.profile_card h2 {
+  text-align: center;
+  margin-top: 5px;
+}

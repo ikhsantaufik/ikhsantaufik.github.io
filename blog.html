@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BLOG</title>
+
+    <link rel="stylesheet" href="./assets/css/style_blog.css" />
+
+    <!-- script font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b9d0ad08e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left">
+        <ul>
+          <img src="./assets/image/logo.png" alt="logo" />
+          <li>
+            <a href="./index.html">Home</a>
+          </li>
+          <li class="active">
+            <a href="./blog.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="right">
+        <a href="./contact.html">Contact Me</a>
+      </div>
+    </nav>
+
+    <!-- ADD PROJECT -->
+    <div class="container">
+      <h1>ADD MY PROJECT</h1>
+
+      <div class="container-form">
+        <form onsubmit="addBlog(event)">
+          <!-- Project Name -->
+          <div class="title">
+            <!-- title-->
+            <label for="input-title">Project Name</label>
+            <input type="text" id="input-title" />
+          </div>
+
+          <!-- Date -->
+          <div class="date">
+            <!-- date-->
+            <div class="start-date">
+              <label for="input-start-date">Start Date</label>
+              <input type="date" id="input-start-date" />
+            </div>
+            <div class="end-date">
+              <label for="input-end-date">End Date</label>
+              <input type="date" id="input-end-date" />
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="description">
+            <!-- description-->
+            <label for="input-blog-description">Description</label>
+            <textarea id="input-blog-description"></textarea>
+          </div>
+
+          <!-- Technologies -->
+          <div class="tech">
+            <!-- tech-->
+            <label>Technologies</label>
+            <div class="tech-checkbox">
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkbox-reactjs"
+                  name="tech-icon"
+                  value="fa-brands fa-react"
+                />
+                <label>React JS</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkbox-nodejs"
+                  name="tech-icon"
+                  value="fa-brands fa-node-js"
+                />
+                <label>Node JS</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkbox-java"
+                  name="tech-icon"
+                  value="fa-brands fa-java"
+                />
+                <label>Java</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
+                  id="checkbox-javascript"
+                  name="tech-icon"
+                  value="fa-brands fa-js"
+                />
+                <label>Javascript</label>
+              </div>
+            </div>
+          </div>
+
+          <!-- Upload Image -->
+          <div class="upload-image">
+            <!-- images-->
+            <label for="input-file-image">choose</label>
+            <input type="file" id="input-file-image" name="filename" hidden />
+            <i class="fa-solid fa-paperclip"> </i>
+          </div>
+
+          <!-- Submit -->
+          <div class="submit-btn">
+            <button type="submit">submit</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- PROJECT LIST -->
+    <div class="container-project-list">
+      <div class="container-blog">
+        <h1>MY PROJECT</h1>
+        <div class="blog-card" id="blog-card">
+          <!-- dynamic content would be here -->
+        </div>
+      </div>
+    </div>
+
+    <!-- scrip blog js -->
+    <script src="./assets/js/blog.js"></script>
+  </body>
+</html>

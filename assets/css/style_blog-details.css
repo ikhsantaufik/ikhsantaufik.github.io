@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins";
+}
+
+body {
+  background-color: #e3e7eb;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f3f3;
+  padding: 15px 80px;
+  align-items: center;
+}
+
+nav .left ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+nav .left ul img {
+  margin-right: 40px;
+}
+
+nav .left ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav .left ul .active a {
+  font-weight: bold;
+}
+
+nav .left ul li {
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+nav .right a {
+  text-decoration: none;
+  background-color: #111727;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+/* Content */
+h1 {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.h4-technologies {
+  margin-top: 60px;
+}
+
+.entities i {
+  font-size: 25px;
+}
+
+.content {
+  margin: 30px 150px;
+}
+
+.content-entities {
+  display: flex;
+  gap: 60px;
+}
+
+.content-entities img {
+  width: 100vh;
+  height: 60vh;
+}
+
+.content-paragraph {
+  margin-top: 60px;
+}
+
+.content-paragraph p {
+  text-align: justify;
+}
+
+/* class duration */
+.calendar {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+.clock {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}
+
+/* class tech */
+.tech {
+  margin-top: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  column-gap: 20px;
+  row-gap: 15px;
+}
+
+.tech div {
+  display: flex;
+  gap: 10px;
+}
