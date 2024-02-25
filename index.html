@@ -29,13 +29,22 @@
           </li>
         </ul>
       </div>
-      <div class="hamberger">
-        <i class="fa-solid fa-bars"></i>
-      </div>
       <div class="right">
         <a href="./contact.html">Contact Me</a>
       </div>
+
+      <div class="hamberger">
+        <button onclick="openHamberger()">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </button>
+      </div>
     </nav>
+    
+    <div class="hamberger-bars-items" id="hamberger-bars-items">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </div>
 
     <div class="card">
       <div class="content">
@@ -56,14 +65,15 @@
           </p>
 
           <div class="content_btn">
-            <button>contact</button>
-            <p>download CV</p>
-            <a
-              href="https://drive.usercontent.google.com/download?id=1FsRxvpIAzpt3JxvGzcZX24bjuPtR3BOP&amp;export=download&amp;authuser=0&amp;confirm=t&amp;uuid=a812aa28-7c8e-4ca9-8cb7-bf0062aa0ac5&amp;at=APZUnTXlrYc5dSXKqEje5SmqarNI:1707725703411"
-              download
-            >
-              <i class="fa-solid fa-download"></i>
-            </a>
+            <button><a href="./contact.html">contact</a></button>
+            <p>
+              <a
+                href="https://drive.usercontent.google.com/download?id=1FsRxvpIAzpt3JxvGzcZX24bjuPtR3BOP&amp;export=download&amp;authuser=0&amp;confirm=t&amp;uuid=a812aa28-7c8e-4ca9-8cb7-bf0062aa0ac5&amp;at=APZUnTXlrYc5dSXKqEje5SmqarNI:1707725703411"
+                download
+                >download CV
+                <i class="fa-solid fa-download"></i>
+              </a>
+            </p>
           </div>
 
           <div class="content_socialmedia">
@@ -91,5 +101,6 @@
         </div>
       </div>
     </div>
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>

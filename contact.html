@@ -7,6 +7,12 @@
 
     <!-- style css -->
     <link rel="stylesheet" href="./assets/css/style_contact.css" />
+
+    <!-- script font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b9d0ad08e2.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
 
   <body>
@@ -15,7 +21,7 @@
       <div class="left">
         <ul>
           <img src="./assets/image/logo.png" alt="logo" />
-          <li>
+          <li class="active">
             <a href="./index.html">Home</a>
           </li>
           <li>
@@ -23,11 +29,21 @@
           </li>
         </ul>
       </div>
-
       <div class="right">
         <a href="./contact.html">Contact Me</a>
       </div>
+
+      <div class="hamberger">
+        <button onclick="openHamberger()">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </button>
+      </div>
     </nav>
+    <div class="hamberger-bars-items" id="hamberger-bars-items">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </div>
 
     <h1>GET IT TOUCH</h1>
 
@@ -67,6 +83,6 @@
       </div>
     </form>
   </body>
-
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/nav.js"></script>
 </html>

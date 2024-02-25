@@ -22,19 +22,29 @@
       <div class="left">
         <ul>
           <img src="./assets/image/logo.png" alt="logo" />
-          <li>
+          <li class="active">
             <a href="./index.html">Home</a>
           </li>
-          <li class="active">
+          <li>
             <a href="./blog.html">My Project</a>
           </li>
         </ul>
       </div>
-
       <div class="right">
         <a href="./contact.html">Contact Me</a>
       </div>
+
+      <div class="hamberger">
+        <button onclick="openHamberger()">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </button>
+      </div>
     </nav>
+    <div class="hamberger-bars-items" id="hamberger-bars-items">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </div>
 
     <h1 id="title-h1"></h1>
 
@@ -128,5 +138,6 @@
 
       renderDetailBlog(myParam);
     </script>
+    <script src="./assets/js/nav.js"></script>
   </body>
 </html>
