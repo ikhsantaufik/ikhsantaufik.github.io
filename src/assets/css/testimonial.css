@@ -1,0 +1,231 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: #f4f3f3;
+  padding: 15px 80px;
+  align-items: center;
+}
+
+nav .left ul {
+  display: flex;
+  align-items: center;
+  padding: 0;
+}
+
+nav .left ul img {
+  margin-right: 40px;
+}
+
+nav .left ul li a {
+  color: #000;
+  text-decoration: none;
+}
+
+nav .left ul .active a {
+  font-weight: bold;
+}
+
+nav .left ul li {
+  list-style-type: none;
+  margin-right: 25px;
+}
+
+.right a {
+  text-decoration: none;
+  background-color: #111727;
+  padding: 8px 20px;
+  border-radius: 8px;
+  color: #fff;
+}
+
+.hamberger {
+  display: none;
+}
+
+.hamberger-bars-items {
+  display: none;
+}
+
+.hamberger button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.hamberger-bars-items a {
+  display: flex;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hamberger-bars-items a.active {
+  background-color: rgba(0, 0, 0, 0.099);
+}
+
+.container {
+  padding: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.testimonials {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.testimonial {
+  width: 25%;
+  margin: 0 15px 30px 15px;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.quote {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.author {
+  font-weight: bold;
+  text-align: right;
+}
+
+.profile-testimonial {
+  width: 100%;
+}
+
+.container-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rating-btn {
+  margin: 20px;
+  padding: 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: rgb(0, 0, 0);
+  color: white;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+}
+
+.rating-btn i {
+  color: white;
+}
+
+#barsmenu {
+  display: none;
+}
+
+.hamburger-nav-container {
+  font-size: 23px;
+  list-style-type: none;
+  display: none;
+}
+
+.hamburger-nav-container a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #9a9a9a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.hamburger-nav-container .hamburger-active {
+  text-decoration: none;
+  color: #fff;
+  background-color: (rgba(0, 0, 0, 0), 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+@media only screen and (max-width: 900px) {
+  .testimonial {
+    width: 40%;
+  }
+
+  .left ul li {
+    display: none;
+  }
+
+  .right a {
+    display: none;
+  }
+
+  .hamberger {
+    display: block;
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .testimonial {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .item-collapse {
+    display: none;
+  }
+
+  #barsmenu {
+    display: block;
+  }
+}

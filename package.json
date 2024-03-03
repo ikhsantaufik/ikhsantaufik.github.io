@@ -1,0 +1,14 @@
+{
+  "name": "batch-53",
+  "version": "1.0.0",
+  "description": "personal website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ikhsan",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.3"
+  }
+}

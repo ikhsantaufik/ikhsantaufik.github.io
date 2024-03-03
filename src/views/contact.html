@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CONTACT</title>
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../assets/css/style_contact.css" />
+
+    <!-- script font awesome -->
+    <script
+      src="https://kit.fontawesome.com/b9d0ad08e2.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="left">
+        <ul>
+          <img src="../assets/image/logo.png" alt="logo" />
+          <li class="active">
+            <a href="./index.html">Home</a>
+          </li>
+          <li>
+            <a href="./blog.html">My Project</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right">
+        <a href="./contact.html">Contact Me</a>
+      </div>
+
+      <div class="hamberger">
+        <button onclick="openHamberger()">
+          <i class="fa-solid fa-bars fa-2xl"></i>
+        </button>
+      </div>
+    </nav>
+    <div class="hamberger-bars-items" id="hamberger-bars-items">
+      <a href="./index.html" class="active">Home</a>
+      <a href="./blog.html">Blog</a>
+      <a href="./contact.html">Contact</a>
+    </div>
+
+    <h1>GET IT TOUCH</h1>
+
+    <!-- Form contact -->
+    <form>
+      <div>
+        <label>Name</label>
+        <input type="text" placeholder="Type your name..." id="name" />
+      </div>
+
+      <div>
+        <label>Email</label>
+        <input type="email" placeholder="Type your email..." id="email" />
+      </div>
+
+      <div>
+        <label>Phone Number</label>
+        <input type="text" placeholder="Type your phone number..." id="phone" />
+      </div>
+
+      <div>
+        <label>Subject</label>
+        <select id="subject">
+          <option hidden></option>
+          <option>Fullstack Engineer</option>
+          <option>DevOps Engineer</option>
+        </select>
+      </div>
+
+      <div>
+        <label>Your Message</label>
+        <textarea id="message"></textarea>
+      </div>
+
+      <div>
+        <button type="button" onclick="getData()">submit</button>
+      </div>
+    </form>
+  </body>
+  <script src="../assets/js/script.js"></script>
+  <script src="../assets/js/nav.js"></script>
+</html>
